@@ -53,4 +53,13 @@ elite-self/
 - All CSS is in `<style>` in `<head>` (~1300 lines)
 - All HTML content starts at line ~1296 (`<!-- NAV -->`)
 - Responsive breakpoints: `@media (max-width: 768px)` and `@media (max-width: 480px)`
-- No git repo yet — changes are local only unless user sets one up
+
+## Deploying Live (one shot)
+GitHub repo: `https://github.com/eliteself13/elite-self`
+Netlify auto-deploys from `main` branch.
+
+```bash
+git -C ~/Desktop/elite-self add -A && git -C ~/Desktop/elite-self commit -m "your message" && git -C ~/Desktop/elite-self push origin main
+```
+
+That's it — Netlify picks it up automatically within ~30 seconds.

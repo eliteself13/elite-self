@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary Meta -->
+<title>How To Get Abs — Free Fat Loss Guide For Men (EliteSelf)</title>
+<meta name="description" content="A free, no-BS fat loss guide for men who want visible abs. How fat loss actually works, how to train your core, and how to reveal — and keep — your abs.">
+<meta name="author" content="EliteSelf Coaching">
+<meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="favi.png">
+<link rel="apple-touch-icon" href="favi.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elite-self.com/abs">
+<link rel="canonical" href="https://elite-self.com/abs">
+<meta property="og:title" content="How To Get Abs — Free Fat Loss Guide For Men (EliteSelf)">
+<meta property="og:description" content="A free, no-BS fat loss guide for men who want visible abs — how fat loss works, how to train your core, and how to reveal and keep your abs.">
+<meta property="og:image" content="https://elite-self.com/banner.png">
+
+<!-- Twitter / X Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How To Get Abs — Free Fat Loss Guide For Men (EliteSelf)">
+<meta name="twitter:description" content="A free, no-BS fat loss guide for men who want visible abs — how fat loss works, how to train your core, and how to reveal and keep your abs.">
+<meta name="twitter:image" content="https://elite-self.com/banner.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --black: #080808;
+    --dark: #0f0f0f;
+    --card: #141414;
+    --border: #1e1e1e;
+    --green-accent: #7ed957;
+    --green-light: #9be872;
+    --green-dim: rgba(126,217,87,0.15);
+    --green: #22c55e;
+    --white: #f5f5f0;
+    --gray: #888880;
+    --mid: #444440;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* NOISE OVERLAY */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1000;
+    opacity: 0.4;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to bottom, rgba(8,8,8,0.95), transparent);
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    text-decoration: none;
+  }
+  .nav-symbol { height: 34px; width: auto; display: block; }
+  .nav-wordmark-img { height: 58px; width: auto; display: block; margin-left: -2px; }
+  .nav-coaching {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.55rem;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    line-height: 1;
+    margin-left: 3px;
+  }
+
+  /* HAMBURGER */
+  .nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 42px;
+    height: 42px;
+    z-index: 210;
+    touch-action: manipulation;
+  }
+  .nav-toggle span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: var(--white);
+    transition: transform 0.3s ease, opacity 0.2s ease;
+  }
+  .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+  .nav-toggle.open span:nth-child(2) { opacity: 0; }
+  .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+  /* SLIDE-IN MENU */
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8,8,8,0.7);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 190;
+  }
+  .menu-overlay.open { opacity: 1; visibility: visible; }
+
+  .site-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: min(360px, 82vw);
+    background: var(--dark);
+    border-left: 1px solid var(--border);
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 110px 44px 44px;
+  }
+  .site-menu.open { transform: translateX(0); }
+
+  .menu-eyebrow {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 24px;
+  }
+  .menu-links { display: flex; flex-direction: column; }
+  .menu-links a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    text-decoration: none;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.2s, padding-left 0.2s;
+  }
+  .menu-links a:hover { color: var(--green-accent); padding-left: 8px; }
+  .menu-links a.is-current { color: var(--green-accent); }
+
+  .menu-cta {
+    margin-top: auto;
+    background: var(--green-accent);
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .menu-cta:hover { background: var(--green-light); transform: translateY(-2px); }
+
+  /* BUTTONS */
+  .btn-primary {
+    background: var(--green-accent);
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+    touch-action: manipulation;
+  }
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(126,217,87,0.3); }
+  .btn-primary:hover::after { opacity: 0.1; }
+
+  .btn-secondary {
+    color: var(--gray);
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid var(--mid);
+    padding-bottom: 2px;
+    transition: all 0.2s;
+    font-weight: 500;
+  }
+  .btn-secondary:hover { color: var(--white); border-color: var(--white); }
+
+  /* SECTION BASE */
+  section { padding: 100px 40px; position: relative; }
+  .container { max-width: 1000px; margin: 0 auto; }
+
+  .section-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.25em;
+    color: var(--green-accent);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .section-tag::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: var(--green-accent);
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 24px;
+  }
+
+  .section-body {
+    font-size: 1.05rem;
+    color: var(--gray);
+    max-width: 620px;
+    line-height: 1.8;
+  }
+
+  /* HERO */
+  .blueprint-hero {
+    padding: 160px 40px 4px;
+    border-bottom: 1px solid var(--border);
+    background:
+      radial-gradient(1200px 500px at 50% -10%, rgba(126,217,87,0.08), transparent 70%),
+      var(--black);
+  }
+  .blueprint-hero .container { max-width: 820px; text-align: left; }
+
+  .hero-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    color: var(--green-accent);
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+  .blueprint-hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(3rem, 9vw, 6.5rem);
+    line-height: 0.92;
+    letter-spacing: 0.02em;
+    margin-bottom: 26px;
+  }
+  .blueprint-hero h1 span { color: var(--green-accent); }
+  .hero-tagline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1rem;
+    letter-spacing: 0.22em;
+    color: var(--green-accent);
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero-tagline::before {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 1px;
+    background: var(--green-accent);
+  }
+  .hero-sub {
+    font-size: 1.15rem;
+    color: var(--gray);
+    max-width: 620px;
+    margin: 0 0 20px;
+    line-height: 1.75;
+  }
+  .hero-meta {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 22px;
+    margin-top: 34px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .hero-meta span { color: var(--green-accent); }
+
+  /* HOW TO USE */
+  .howto { background: var(--dark); border-bottom: 1px solid var(--border); padding: 6px 40px 64px; }
+  .howto .container { max-width: 760px; }
+  .howto p {
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: 300;
+    line-height: 1.85;
+  }
+  .howto p strong { color: var(--green-accent); font-weight: 500; }
+
+  /* PILLARS */
+  .pillars { padding-top: 40px; padding-bottom: 20px; }
+  .pillar {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 0 36px;
+    padding: 56px 0;
+    border-bottom: 1px solid var(--border);
+    align-items: start;
+  }
+  .pillar:first-child { border-top: 1px solid var(--border); }
+
+  .pillar-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 4.5rem;
+    line-height: 0.85;
+    color: var(--green-accent);
+    letter-spacing: 0.02em;
+    opacity: 0.9;
+  }
+
+  .pillar-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 0.03em;
+    margin-bottom: 14px;
+    line-height: 1;
+  }
+  .pillar-principle {
+    font-size: 1.08rem;
+    color: var(--white);
+    line-height: 1.65;
+    margin-bottom: 22px;
+    max-width: 640px;
+  }
+  .pillar-principle b { color: var(--green-accent); font-weight: 500; }
+
+  .apply-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gray);
+    margin-bottom: 14px;
+  }
+  .apply-list { list-style: none; display: flex; flex-direction: column; gap: 12px; max-width: 640px; }
+  .apply-list li {
+    position: relative;
+    padding-left: 26px;
+    color: var(--gray);
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+  .apply-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background: var(--green-accent);
+    transform: rotate(45deg);
+  }
+  .apply-list li strong { color: var(--white); font-weight: 500; }
+
+  .pillar-note {
+    margin-top: 18px;
+    font-size: 0.82rem;
+    color: var(--mid);
+    font-style: italic;
+    max-width: 640px;
+    line-height: 1.5;
+  }
+
+  /* SUB-POINTS WITHIN A PILLAR */
+  .points { display: flex; flex-direction: column; gap: 26px; max-width: 660px; margin-top: 8px; }
+  .point { position: relative; padding-left: 24px; }
+  .point::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 8px;
+    height: 8px;
+    background: var(--green-accent);
+    transform: rotate(45deg);
+  }
+  .point-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--white);
+    letter-spacing: 0.01em;
+    margin-bottom: 5px;
+  }
+  .point-body { color: var(--gray); font-size: 0.98rem; line-height: 1.65; }
+  .point-body b { color: var(--green-accent); font-weight: 500; }
+
+  /* VERBATIM GUIDE TEXT */
+  .guide-text {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    max-width: 660px;
+  }
+  .guide-text:last-child { margin-bottom: 0; }
+  .guide-text a { color: var(--green-accent); text-decoration: none; }
+  .guide-text a:hover { text-decoration: underline; }
+  .hero-sub a { color: var(--green-accent); text-decoration: none; }
+  .hero-sub a:hover { text-decoration: underline; }
+
+  /* ABS PHOTO */
+  .abs-photo { margin-top: 32px; max-width: 660px; }
+  .abs-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  /* TESTIMONIALS CAROUSEL */
+  .tsection {
+    padding: 40px 0 88px;
+    border-top: 1px solid var(--border);
+    background:
+      radial-gradient(1000px 420px at 50% 118%, rgba(126,217,87,0.08), transparent 70%),
+      var(--dark);
+  }
+  .theader { max-width: 1000px; margin: 0 auto 34px; padding: 0 40px; }
+  .theader h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+  .theader h2 span { color: var(--green-accent); }
+  .theader p { color: var(--gray); font-size: 1rem; margin-top: 12px; max-width: 560px; }
+  .theader-cta { text-align: left; margin-bottom: 40px; }
+  .theader-cta h2 { font-size: clamp(2.4rem, 6vw, 4.2rem); line-height: 0.95; max-width: 840px; }
+  .tcta { text-align: left; max-width: 1000px; margin: 40px auto 0; padding: 0 40px; }
+  .tcta p { color: var(--white); font-size: 1.1rem; line-height: 1.8; margin-bottom: 32px; }
+  .tcta-tagline { justify-content: flex-start; margin-top: 0; margin-bottom: 32px; line-height: 1.6; }
+  .tcta-tagline::before { display: none; }
+  .ttrack {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 4px 20px 22px;
+    scroll-padding: 0 20px;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ttrack > .tcard:last-child { margin-right: 20px; }
+  .ttrack:active { cursor: grabbing; }
+  .ttrack::-webkit-scrollbar { height: 6px; }
+  .ttrack::-webkit-scrollbar-track { background: var(--border); }
+  .ttrack::-webkit-scrollbar-thumb { background: var(--mid); border-radius: 3px; }
+  .tcard {
+    flex: 0 0 340px;
+    scroll-snap-align: start;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s;
+  }
+  .tcard:hover { border-color: rgba(126,217,87,0.3); }
+  .tcard-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--border); }
+  .tcard-photos.one { grid-template-columns: 1fr; }
+  .tcard-slot { position: relative; aspect-ratio: 3 / 4; overflow: hidden; }
+  .tcard-slot img { width: 100%; height: 100%; object-fit: cover; display: block; -webkit-user-drag: none; user-select: none; }
+  .tcard-label {
+    position: absolute;
+    bottom: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.58rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    background: rgba(8,8,8,0.82);
+  }
+  .tcard-label.before { left: 8px; color: var(--gray); }
+  .tcard-label.after { right: 8px; color: var(--green-accent); }
+  .tcard-body { padding: 20px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+  .tcard-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.56rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--mid);
+  }
+  .tcard-id { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  .tcard-sep { color: var(--mid); }
+  .tcard-id .tcard-role { margin-top: 0; }
+  .tcard-quote { font-size: 0.95rem; line-height: 1.6; color: var(--white); font-weight: 300; }
+  .tcard-person { margin-top: auto; }
+  .tcard-name { font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 0.95rem; color: var(--white); }
+  .tcard-role {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    color: var(--green-accent);
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+  .point-note {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--mid);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  /* CLOSING CTA */
+  .closing {
+    text-align: center;
+    padding-top: 48px;
+    background:
+      radial-gradient(1000px 400px at 50% 120%, rgba(126,217,87,0.08), transparent 70%),
+      var(--dark);
+    border-top: 1px solid var(--border);
+  }
+  .closing .container { max-width: 720px; }
+  .closing h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(2.4rem, 6vw, 4.2rem);
+    line-height: 0.95;
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+  }
+  .closing h2 span { color: var(--green-accent); }
+  .closing p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  .closing-actions { display: flex; gap: 28px; justify-content: center; align-items: center; flex-wrap: wrap; }
+  .closing-signoff {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: var(--mid);
+    line-height: 1.7;
+  }
+  .closing-signoff a { color: var(--green-accent); text-decoration: none; }
+  .closing-signoff a:hover { text-decoration: underline; }
+
+  /* FOOTER */
+  footer {
+    background: var(--black);
+    border-top: 1px solid var(--border);
+    padding: 48px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .footer-logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    color: var(--white);
+    text-decoration: none;
+  }
+  .footer-logo span { color: var(--green-accent); }
+  .footer-copy { font-size: 0.75rem; color: var(--mid); letter-spacing: 0.05em; }
+
+  /* SCROLL REVEAL */
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    nav { padding: 16px 20px; }
+    .nav-symbol { height: 28px; }
+    .nav-wordmark-img { height: 48px; }
+    .nav-coaching { font-size: 1.3rem; }
+    section { padding: 72px 22px; }
+    .blueprint-hero { padding: 120px 22px 4px; }
+    .howto { padding: 6px 22px 44px; }
+    .pillars { padding-top: 24px; padding-bottom: 12px; }
+    .tsection { padding: 32px 0 28px; }
+    .theader { padding: 0 22px; }
+    .ttrack { padding: 4px 16px 20px; scroll-padding: 0 16px; gap: 16px; }
+    .ttrack > .tcard:last-child { margin-right: 16px; }
+    .tcard { flex: 0 0 82vw; max-width: 330px; }
+    .pillar { grid-template-columns: 1fr; gap: 8px; padding: 44px 0; }
+    .pillar-num { font-size: 3rem; margin-bottom: 6px; }
+    .site-menu { padding: 100px 32px 36px; }
+    .menu-links a { font-size: 1.75rem; }
+  }
+  @media (max-width: 480px) {
+    .hero-sub { font-size: 1rem; }
+    .howto p { font-size: 1rem; }
+    .closing-actions { flex-direction: column; gap: 20px; }
+    .btn-primary { width: 100%; text-align: center; }
+    footer { flex-direction: column; text-align: center; gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="TRANSPARENT%20LOGO.png" alt="" class="nav-symbol">
+    <img src="ELITESELF%20Text%20Logo.png" alt="EliteSelf" class="nav-wordmark-img">
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- SLIDE-IN MENU -->
+<div class="menu-overlay" id="menuOverlay"></div>
+<aside class="site-menu" id="siteMenu" aria-hidden="true">
+  <div class="menu-eyebrow">Menu</div>
+  <div class="menu-links">
+    <a href="index.html">Home</a>
+    <a href="/abs" class="is-current">Free Abs Guide</a>
+  </div>
+  <a href="https://calendly.com/eliteselfcoaching/performance-os" target="_blank" class="menu-cta">Book a Free Call</a>
+</aside>
+
+<!-- HERO -->
+<header class="blueprint-hero">
+  <div class="container">
+    <h1>How To Get <span>Abs</span></h1>
+    <div class="hero-tagline">A Fat Loss Guide For Men</div>
+  </div>
+</header>
+
+<!-- INTRO -->
+<section class="howto">
+  <div class="container">
+    <p class="guide-text reveal">This is a nothing more, nothing less breakdown on how to see visible abs</p>
+    <p class="guide-text reveal">This was made for men who presumably have at least 10-20lbs+ of fat covering their abs and have never seen them before.</p>
+    <p class="guide-text reveal">This is also curated such that a man who knows nothing about health and fitness understands and can take action from this breakdown alone.</p>
+    <p class="guide-text reveal">Time is valuable, so I tried to keep this as succinct as possible, without sacrificing necessary info or context.</p>
+    <p class="guide-text reveal">My personal objective put another way: Save you an hour of trying to accumulate info on ChatGPT, and years of trial and error trying to do this on your own.</p>
+    <figure class="abs-photo reveal">
+      <img src="abs%20pic.png" alt="">
+    </figure>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section class="pillars">
+  <div class="container">
+
+    <!-- 01 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">01</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">How fat loss works:</h2>
+        <p class="guide-text">Fat loss is simple: your body stores fat as extra energy, and it loses fat only when it needs more energy than you give it from food.</p>
+        <p class="guide-text">This is called a "calorie deficit", where you are consuming less calories than you are burning on a daily or weekly basis.</p>
+        <p class="guide-text">When you consistently eat slightly less energy than your body uses, it is forced to pull from stored fat to survive.</p>
+        <p class="guide-text">If that doesn't happen, fat loss doesn't happen — no matter how "clean" you eat or how hard you train. You can lose weight while only eating McDonalds, and gain weight only eating chicken and broccoli. So the ideal situation is eating both the quantity of calories that will generate fat loss, and the quality of calories that will make you energized and healthy.</p>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">02</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">You Cannot Spot Reduce</h2>
+        <p class="guide-text">Your body doesn't choose where fat comes off first and for most men, stomach fat is not only the last to go, but also the hardest to shed.</p>
+        <p class="guide-text">This means that doing ab exercises does NOTHING to burn the fat that's on top of your abs, except burn a few calories, helping you get into a calorie deficit, which will initiate fat loss across your body as a whole, and again your body decides what fat is shed first etc.</p>
+        <p class="guide-text">Doing ab exercises will help build your abs, like any other muscle. Which means that as you shed fat through a calorie deficit, the more you build your abs, the sooner they will be visible, and the more pronounced they'll be at the end.</p>
+        <p class="guide-text">The fat that's covering your abs is usually your last 5-10lbs, and it's certainly harder to shed than your first 5-10lbs.</p>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">03</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">Genetic Factors</h2>
+        <p class="guide-text">Genetics influence how fat loss looks, not whether fat loss happens. Everyone loses fat the same way (by being in a calorie deficit), but genetics determine where your body prefers to store fat and where it lets it go last.</p>
+        <p class="guide-text">For most men, again the stomach is the most stubborn area, which is why abs are usually the final thing to show, even when the rest of the body looks lean. Some men will see abs at higher body fat levels, while others must get leaner before they're visible.</p>
+        <p class="guide-text">Genetics also affect things like natural muscle shape, ab symmetry, and how sharply defined your abs appear once lean.</p>
+        <p class="guide-text">What genetics do not do is prevent you from getting abs entirely. There's no such thing as "I can't get abs because of my genetics". If you consistently lose fat while maintaining muscle, your abs will show eventually.</p>
+        <p class="guide-text">The only difference genetics creates is how long it takes and how lean you must become in order to see them, not whether the outcome is possible.</p>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">04</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">The Anatomy of the Abs.</h2>
+        <p class="guide-text">There are two main parts, your abs (In the middle), and obliques (on the outside).</p>
+        <p class="guide-text">Both contribute to a nice overall mid section look.</p>
+        <p class="guide-text">You are going to want to do exercises that target the abs 50-75% of the time, and exercises that target the obliques 25-50% of the time.</p>
+        <p class="guide-text">Can also break the abs into the upper and lower abs. The lower abs specifically will be the last to be revealed, and hardest to build.</p>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">05</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">Ab exercises</h2>
+        <p class="guide-text">You don't need a fancy routine, you don't need to be doing hanging leg raises from a bar while some dude punches you in the stomach between each rep.</p>
+        <p class="guide-text">Many men are stumped on which ab exercises to do, when in fact the first 3-5 that come to their mind off the top of their head would likely be sufficient, they just don't do them.</p>
+        <p class="guide-text">All the exercises that will help you build abs are pretty simple, such as leg raises, sit ups, V-Tucks, Side planks, Side plank raises, Bicycle kicks, and Russian twists etc.</p>
+        <p class="guide-text">Those exercises comprise 96% of the targeted core work I've ever done.</p>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">06</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">How much and how often</h2>
+        <p class="guide-text">Hitting abs once per week will move you in the right direction. Twice per week would move you faster. Hitting them 3 times a week would build them faster. But it depends on how fast your body can recover.</p>
+        <p class="guide-text">If you're really only starting to attack abs for the first time, twice per week, with 8-10 total sets will be sufficient to build them.</p>
+        <p class="guide-text">Again the main ab revealing mechanism here is going to be the calorie deficit, whether you hit abs once or three times per week.</p>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">07</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">Core Engagement during other movements</h2>
+        <p class="guide-text">It's important to engage your core during other movements in the gym, especially movements where you want to stabilize your back like squats and deadlifts, but ultimately you should be actively engaging your core every time you pick up a dumbbell, and in almost any other movement in the gym.</p>
+        <p class="guide-text">This will not only keep you safe in the gym, but also in life as well, because developing the habit of bracing your core is important whether you are picking up a dumbbell or a baby.</p>
+        <p class="guide-text">And yes, all that core bracing will contribute to building your abs over time as well, not as much as direct ab exercises, but it certainly helps.</p>
+      </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">08</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">Other Factors that contribute to Fat Loss:</h2>
+        <p class="guide-text">Food controls fat loss because it's easy to eat more energy than you burn, while exercise mainly helps by preserving muscle and keeping your body functioning well.</p>
+        <p class="guide-text">Protein matters because it basically tells your body to burn fat instead of muscle. A good amount of protein to eat per day is 1g of protein per 1lbs of bodyweight (or more optimally GOAL bodyweight)</p>
+        <p class="guide-text">Walking and daily movement increase energy use without stressing your system.</p>
+        <p class="guide-text">Sleep matters because poor sleep increases hunger and makes it harder to stay in a deficit. Everything in the body functions better when you're rested, and worse when your not.</p>
+      </div>
+    </div>
+
+    <!-- 09 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">09</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">The Maintenance of abs</h2>
+        <p class="guide-text">Maintaining visible abs is about staying close to your lean threshold.</p>
+        <p class="guide-text">Once you have abs, small increases in body fat can blur them quickly, especially for men whose genetics store fat in the stomach first and quickly.</p>
+        <p class="guide-text">It can be futile to try to maintain sharp abs year round. This is why many people move through cut and bulk cycles.</p>
+        <p class="guide-text">A cut is a period where you intentionally eat slightly less to reduce fat and reveal abs. A bulk is a period where you eat slightly more to build muscle, knowing that some fat gain is normal and abs may soften or disappear temporarily.</p>
+        <p class="guide-text">Note: A lean bulk is a type of calorie surplus where you are eating barely MORE calories than you are burning, such that you gain weight and muscle slowly, while keeping your BF% gain as low as possible.</p>
+        <p class="guide-text">Once our clients shed the fat and reach the muscle gain phase, this is the approach we typically take.</p>
+        <p class="guide-text">Some men can easily maintain at least slightly visible abs during a lean bulk, and some men must accept that they aren't really going to see their abs during bulk season.</p>
+        <p class="guide-text">And either way, it's okay, you'll have the tools to reveal the abs again at any point.</p>
+        <p class="guide-text">The goal is not perfection, but control. Staying within a range where fat gain is intentional and reversible.</p>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="pillar reveal">
+      <div class="pillar-num">10</div>
+      <div class="pillar-body">
+        <h2 class="pillar-title">End Notes:</h2>
+        <p class="guide-text">Abs are possible for you with the right strategy.</p>
+        <p class="guide-text">It's statistically proven that there are less men with abs than there are millionaires, and so achieving them is rare.</p>
+        <p class="guide-text">It's rare because it's hard.</p>
+        <p class="guide-text">So ask yourself, why do you want this? Why is it important that you lose the fat and become this version of yourself?</p>
+        <p class="guide-text">What do you want to prove to yourself here? What is this going to do for you?</p>
+        <p class="guide-text">Define your drive.</p>
+        <p class="guide-text">Your "Why" is what's going to push you through the boring, tedious disciplined work that's required to achieve them.</p>
+        <p class="guide-text">But if you ask anyone with abs, the results are 100x worth the work, not only for the external result of the abs themselves, but because of the person they are forced to become in the pursuit of them.</p>
+        <p class="guide-text">When you finally look in the mirror and see abs, the physical change you see will not even touch the mental transformation you would have made by that point, and you're going to be proud of yourself.</p>
+        <p class="guide-text">You're going to be a new version of yourself, with new standards, strengths, identity and tools.</p>
+        <p class="guide-text">And I'm excited for you to become that version of yourself.</p>
+        <p class="guide-text">Fitness is only one pillar of self-development, and seeing your abs is only one pillar of fitness, but it's important and meaningful nonetheless.</p>
+        <p class="guide-text">I hope this little doc helped you out on your journey.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="tsection">
+  <div class="theader theader-cta reveal">
+    <h2>Want To Be Part Of The <span>1%</span> Of Men Who Have Visible Abs?</h2>
+  </div>
+  <div class="ttrack" id="testimonialsTrack">
+
+    <!-- Prince -->
+    <div class="tcard">
+      <div class="tcard-photos">
+        <div class="tcard-slot"><img src="prince%201.png" alt="Prince before"><span class="tcard-label before">Before</span></div>
+        <div class="tcard-slot"><img src="prince%202.png" alt="Prince after"><span class="tcard-label after">After</span></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Prince, 37</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"I didn't even think this was possible in my 30's. This is the best shape I've ever been in."</div>
+      </div>
+    </div>
+
+    <!-- Trevor -->
+    <div class="tcard">
+      <div class="tcard-photos">
+        <div class="tcard-slot"><img src="trevor_ba_1.jpg" alt="Trevor before"><span class="tcard-label before">Before</span></div>
+        <div class="tcard-slot"><img src="trevor_ba_2.jpg" alt="Trevor after"><span class="tcard-label after">After</span></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Trevor, 39</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"Focusing on yourself is the most important thing you do for your business. If you're not at 100%, your business can't be at 100%."</div>
+      </div>
+    </div>
+
+    <!-- Nitin -->
+    <div class="tcard">
+      <div class="tcard-photos">
+        <div class="tcard-slot"><img src="nitin%201.png" alt="Nitin before"><span class="tcard-label before">Before</span></div>
+        <div class="tcard-slot"><img src="nitin%202.png" alt="Nitin after"><span class="tcard-label after">After</span></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Nitin, 43</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"With the support of Henry, my EliteSelf Coach, I was able to shed all of my stubborn belly fat."</div>
+      </div>
+    </div>
+
+    <!-- Jonathan -->
+    <div class="tcard">
+      <div class="tcard-photos">
+        <div class="tcard-slot"><img src="jonathan_ba_1.jpg" alt="Jonathan before"><span class="tcard-label before">Before</span></div>
+        <div class="tcard-slot"><img src="jonathan_ba_2.jpg" alt="Jonathan after"><span class="tcard-label after">After</span></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Jonathan, 35</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"I am a completely new man mentally and physically. I now show up with my family and business at a much higher level. I set a better example to everyone around me."</div>
+      </div>
+    </div>
+
+    <!-- Michael -->
+    <div class="tcard">
+      <div class="tcard-photos one">
+        <div class="tcard-slot" style="aspect-ratio: 3 / 2;">
+          <img src="transform-michael.jpg" alt="Michael before and after">
+          <span class="tcard-label before" style="left: 20%; transform: translateX(-50%);">Before</span>
+          <span class="tcard-label after" style="right: auto; left: 80%; transform: translateX(-50%);">After</span>
+        </div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Michael, 41</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"I don't even recognize myself anymore. I am a different human being."</div>
+      </div>
+    </div>
+
+    <!-- Daniel -->
+    <div class="tcard">
+      <div class="tcard-photos">
+        <div class="tcard-slot"><img src="daniel_ba_1.jpg" alt="Daniel before"><span class="tcard-label before">Before</span></div>
+        <div class="tcard-slot"><img src="daniel%20pic%202.png" alt="Daniel after"><span class="tcard-label after">After</span></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Daniel, 37</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"Working hard in the gym is very important — but what you're putting into your body is equally important, if not way more. That's your whole energy and your vitality."</div>
+      </div>
+    </div>
+
+    <!-- Darius -->
+    <div class="tcard">
+      <div class="tcard-photos one">
+        <div class="tcard-slot" style="aspect-ratio: 3 / 2;"><img src="Darius.png" alt="Darius transformation" style="object-position: center 25%;"></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Darius, 32</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"I have lost over 40lbs, but the bigger difference is how I'm showing up in the world, and how I perceive myself."</div>
+      </div>
+    </div>
+
+    <!-- Andrew -->
+    <div class="tcard">
+      <div class="tcard-photos one">
+        <div class="tcard-slot" style="aspect-ratio: 3 / 2;"><img src="andrew_ba.png" alt="Andrew transformation"></div>
+      </div>
+      <div class="tcard-body">
+        <div class="tcard-id"><span class="tcard-name">Andrew, 32</span><span class="tcard-sep">—</span><span class="tcard-role">EliteSelf Client</span></div>
+        <div class="tcard-quote">"I have no words to describe how I feel. I'm so proud of myself. I started the program with a goal of hitting 185lbs, but now I'm at 163lbs."</div>
+      </div>
+    </div>
+
+  </div>
+  <div class="tcta reveal">
+    <div class="hero-tagline tcta-tagline">Apply for our 90-day 1:1 fitness coaching program for men.</div>
+    <div class="closing-actions">
+      <a href="https://calendly.com/eliteselfcoaching/performance-os" target="_blank" class="btn-primary">Book Application Call</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="index.html" class="footer-logo"><span>EliteSelf</span> Coaching</a>
+  <div class="footer-copy">© 2026 <span style="color:var(--green-accent)">EliteSelf</span><span style="color:var(--white)"> Coaching</span>. All rights reserved.</div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => { entry.target.classList.add('visible'); }, i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Drag to scroll testimonials
+  (function(){
+    const el = document.getElementById('testimonialsTrack');
+    if (!el) return;
+    let isDown = false, startX, scrollLeft;
+    el.addEventListener('mousedown', e => { isDown = true; startX = e.pageX - el.offsetLeft; scrollLeft = el.scrollLeft; });
+    el.addEventListener('mouseleave', () => isDown = false);
+    el.addEventListener('mouseup', () => isDown = false);
+    el.addEventListener('mousemove', e => {
+      if (!isDown) return;
+      e.preventDefault();
+      el.scrollLeft = scrollLeft - (e.pageX - el.offsetLeft - startX) * 1.5;
+    });
+  })();
+
+  // Hamburger menu
+  const navToggle = document.getElementById('navToggle');
+  const siteMenu = document.getElementById('siteMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+
+  function setMenu(open) {
+    navToggle.classList.toggle('open', open);
+    siteMenu.classList.toggle('open', open);
+    menuOverlay.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', open);
+    siteMenu.setAttribute('aria-hidden', !open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+
+  navToggle.addEventListener('click', () => setMenu(!siteMenu.classList.contains('open')));
+  menuOverlay.addEventListener('click', () => setMenu(false));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+</script>
+
+</body>
+</html>

@@ -6,9 +6,19 @@ A single-page marketing/sales site for **EliteSelf OS** — a 60-day performance
 ## File Structure
 ```
 elite-self/
-  index.html   — the entire site (HTML + CSS + JS, ~1700 lines, all in one file)
-  CLAUDE.md    — this file
+  index.html      — the main landing page (HTML + CSS + JS, ~1700 lines, all in one file)
+  blueprint.html  — the free abs guide / fat-loss lead magnet (self-contained page)
+  _redirects      — Netlify rewrite: /abs → /blueprint.html (200), so the guide lives at a clean URL
+  CLAUDE.md       — this file
 ```
+
+## Abs Guide (Free Fat Loss Guide)
+- Lives in `blueprint.html`, served live at **https://elite-self.com/abs** (Netlify `_redirects` rewrite, not a real folder)
+- Canonical + og:url point to `/abs`; nav "Free Abs Guide" links (in both index.html and blueprint.html) point to `/abs`
+- Ends with a testimonials carousel (`.ttrack`) of before/after transformation cards (`.tcard`)
+- Card order (left→right): Prince 37, Trevor 39, Nitin 43, Jonathan 35, Michael 41, Daniel 37, Darius 32, Andrew 32
+- Cards show first name + age only (no last names); role text `.tcard-role` is 0.8rem
+- First/last card inset uses `scroll-padding` on `.ttrack` (mandatory scroll-snap eats plain padding/margin — must use scroll-padding)
 
 ## Tech Stack
 - Pure HTML/CSS/JS — no framework, no build tool, no dependencies
@@ -59,7 +69,7 @@ GitHub repo: `https://github.com/eliteself13/elite-self`
 Netlify auto-deploys from `main` branch.
 
 ```bash
-git -C ~/Desktop/elite-self add -A && git -C ~/Desktop/elite-self commit -m "your message" && git -C ~/Desktop/elite-self push origin main
+git -C ~/Developer/elite-self add -A && git -C ~/Developer/elite-self commit -m "your message" && git -C ~/Developer/elite-self push origin main
 ```
 
 That's it — Netlify picks it up automatically within ~30 seconds.

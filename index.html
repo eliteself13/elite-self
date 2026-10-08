@@ -861,24 +861,71 @@
 
   .offer-price-block {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
+    text-align: center;
+    margin-bottom: 32px;
   }
+
+  .offer-price-eyebrow,
+  .offer-price-term {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .offer-price-eyebrow { color: var(--gray); margin-bottom: 10px; }
 
   .offer-price {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
     color: var(--green-accent);
     letter-spacing: 0.03em;
     line-height: 1;
   }
 
+  .offer-price-term { color: var(--white); margin-top: 6px; }
+
   .offer-price-sub {
-    font-size: 0.85rem;
+    margin-top: 18px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--dark);
+    font-size: 0.82rem;
     color: var(--gray);
-    line-height: 1.5;
+  }
+
+  .offer-price-sub strong { color: var(--white); font-weight: 600; }
+
+  .offer-guarantee {
+    margin-top: 20px;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    background: var(--dark);
+    text-align: center;
+  }
+
+  .offer-guarantee-title {
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 6px;
+  }
+
+  .offer-guarantee-title::before {
+    content: '✓';
+    color: var(--green-accent);
+    margin-right: 8px;
+  }
+
+  .offer-guarantee-body {
+    font-size: 0.82rem;
+    color: var(--gray);
+    line-height: 1.6;
   }
 
   .offer-original {
@@ -1562,8 +1609,7 @@
     .offer-title { font-size: 1.8rem; }
     .offer-duration { font-size: 0.82rem; margin-bottom: 28px; }
     .offer-line { font-size: 0.85rem; gap: 10px; }
-    .offer-price { font-size: 2.6rem; }
-    .offer-price span { font-size: 1.4rem !important; }
+    .offer-price { font-size: 3.6rem; }
     .offer-scarcity { font-size: 0.65rem; }
     .offer-cta { font-size: 0.82rem; padding: 18px; }
     .offer-note { font-size: 0.74rem; }
@@ -1583,7 +1629,7 @@
     .hero h1 { font-size: 2.6rem; }
     .section-title { font-size: 1.85rem; }
     .testimonial-card { flex: 0 0 88vw; }
-    .offer-price { font-size: 2.2rem; }
+    .offer-price { font-size: 3rem; }
     .truth h2 { font-size: 1.9rem; }
     .big-quote { font-size: 1.2rem; }
   }
@@ -2371,19 +2417,18 @@
         <div class="offer-divider"></div>
 
         <div class="offer-price-block">
-          <div class="offer-price">$1,997 <span style="font-size:1.8rem">CAD / 3 months</span></div>
-          <div class="offer-price-sub">Then $497 CAD / mo<br>month-to-month</div>
+          <div class="offer-price-eyebrow">Your Investment</div>
+          <div class="offer-price">$1,997</div>
+          <div class="offer-price-term">CAD · First 3 Months</div>
+          <div class="offer-price-sub">Then <strong>$497 CAD / mo</strong>, month-to-month</div>
         </div>
 
         <a href="https://calendly.com/eliteselfcoaching/performance-os" target="_blank" class="offer-cta">Apply Now — Book Your Free Call</a>
-        <div style="display:flex; align-items:flex-start; gap:16px; margin-top:24px; padding:20px; border:1px solid var(--border); background:var(--dark);">
-          <div style="font-size:1.6rem; line-height:1; color:var(--green-accent);">—</div>
-          <div>
-            <div style="font-size:0.8rem; font-weight:700; color:var(--white); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:4px;">Zero Questions Asked Guarantee</div>
-            <div style="font-size:0.82rem; color:var(--gray); line-height:1.6;">Not feeling it within the first 30 days? You get every dollar back. No questions, no hoops, no hassle.</div>
-          </div>
+        <div class="offer-guarantee">
+          <div class="offer-guarantee-title">30-Day Zero Questions Asked Guarantee</div>
+          <div class="offer-guarantee-body">Not feeling it within the first 30 days? You get every dollar back. No questions, no hoops, no hassle.</div>
         </div>
-        <p class="offer-note" style="margin-top:12px;">30-minute discovery call. No pressure. We figure out if it's a fit first.</p>
+        <p class="offer-note">30-minute discovery call. No pressure. We figure out if it's a fit first.</p>
       </div>
     </div>
   </div>

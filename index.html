@@ -561,17 +561,23 @@
     border-bottom: 1px solid var(--border);
   }
 
+  .how .container { max-width: 1400px; }
+
   .steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2px;
     margin-top: 60px;
   }
 
   .step {
     background: var(--card);
-    padding: 48px 36px;
+    padding: 44px 28px;
     position: relative;
+  }
+
+  @media (max-width: 1200px) {
+    .steps { grid-template-columns: repeat(2, 1fr); }
   }
 
   .step-num {

@@ -572,7 +572,16 @@
     background: var(--card);
     padding: 48px 36px;
     position: relative;
+    display: grid;
+    grid-row: span 5;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+    align-content: start;
   }
+
+  .step > * { align-self: start; }
+
+  .step-graphic { margin-top: 32px; }
 
   .step-num {
     font-family: 'JetBrains Mono', monospace;
@@ -597,7 +606,6 @@
   }
 
   .audit-card {
-    margin-top: 32px;
     background: var(--dark);
     border: 1px solid var(--border);
     padding: 22px 20px;
@@ -2012,7 +2020,7 @@
         <div class="step-divider"></div>
         <h3>Performance Audit</h3>
         <p>We get on a call together. I learn about where you are, where you want to go, and what's been getting in the way. We diagnose the real areas of opportunity across every pillar — fitness, energy, health, mindset, habits, and more. No generic assessment. A real conversation.</p>
-        <div class="audit-card">
+        <div class="audit-card step-graphic">
           <div class="audit-head">
             <span>Performance Audit</span>
             <span class="audit-head-sub">Score / 10</span>
@@ -2031,9 +2039,9 @@
       <div class="step reveal">
         <div class="step-num">STEP 02</div>
         <div class="step-divider"></div>
-        <h3>Match You With Your Coach</h3>
+        <h3>Meet Your 1:1 Coach</h3>
         <p>Based on your audit, we pair you with the right ESC Performance Coach for your goals, personality, and lifestyle. Someone who gets your world, holds the standard, and builds a protocol designed specifically around you.</p>
-        <div style="margin-top:28px; display:flex; flex-direction:column; gap:16px;">
+        <div class="step-graphic" style="display:flex; flex-direction:column; gap:16px;">
           <div style="display:flex; align-items:center; gap:14px;">
             <img src="zach.png" alt="Coach Zach" style="width:72px; height:72px; border-radius:50%; object-fit:cover; object-position:top; flex-shrink:0; border:2px solid var(--green-accent);">
             <div>
@@ -2062,7 +2070,8 @@
         <div class="step-divider"></div>
         <h3>Onboarded To EliteSelf OS</h3>
         <p>You get set up on the EliteSelf app — your personal command center. Your coach programs your training, sets your nutrition targets, prescribes your daily habits, and configures everything before day one. You open the app and your system is ready.</p>
-        <div style="margin-top: 28px; display: flex; align-items: center; gap: 14px;">
+        <div class="step-graphic">
+        <div style="display: flex; align-items: center; gap: 14px;">
           <img src="app-icon-transparent.png" alt="EliteSelf App Icon" style="width: 64px; height: 64px; object-fit: contain; flex-shrink: 0;">
           <div>
             <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.05rem; letter-spacing: 0.06em; color: var(--white); line-height: 1;">EliteSelf OS</div>
@@ -2071,6 +2080,7 @@
         </div>
         <div style="margin-top: -20px; margin-bottom: -50px;">
           <img src="picsss.png" alt="EliteSelf App Screenshot" style="width: 100%; display: block;">
+        </div>
         </div>
       </div>
     </div>

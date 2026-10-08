@@ -596,6 +596,61 @@
     line-height: 1.7;
   }
 
+  .audit-card {
+    margin-top: 32px;
+    background: var(--dark);
+    border: 1px solid var(--border);
+    padding: 22px 20px;
+  }
+  .audit-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.06em;
+    color: var(--white);
+    margin-bottom: 18px;
+  }
+  .audit-head-sub,
+  .audit-name,
+  .audit-score,
+  .audit-foot {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .audit-head-sub { color: var(--gray); }
+  .audit-rows { display: flex; flex-direction: column; gap: 12px; }
+  .audit-row {
+    display: grid;
+    grid-template-columns: 76px 1fr 18px;
+    align-items: center;
+    gap: 12px;
+  }
+  .audit-name { color: var(--gray); }
+  .audit-bar {
+    height: 6px;
+    background: var(--border);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .audit-bar span {
+    display: block;
+    height: 100%;
+    background: var(--green-accent);
+    border-radius: 3px;
+  }
+  .audit-score { color: var(--white); text-align: right; }
+  .audit-foot {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    color: var(--gray);
+  }
+  .audit-foot span { color: var(--green-accent); }
+
   .step-divider {
     width: 32px;
     height: 2px;
@@ -1955,8 +2010,23 @@
       <div class="step reveal">
         <div class="step-num">STEP 01</div>
         <div class="step-divider"></div>
-        <h3>Performance Audit Call</h3>
+        <h3>Performance Audit</h3>
         <p>We get on a call together. I learn about where you are, where you want to go, and what's been getting in the way. We diagnose the real areas of opportunity across every pillar — fitness, energy, health, mindset, habits, and more. No generic assessment. A real conversation.</p>
+        <div class="audit-card">
+          <div class="audit-head">
+            <span>Performance Audit</span>
+            <span class="audit-head-sub">Score / 10</span>
+          </div>
+          <div class="audit-rows">
+            <div class="audit-row"><span class="audit-name">Fitness</span><span class="audit-bar"><span style="width:40%"></span></span><span class="audit-score">4</span></div>
+            <div class="audit-row"><span class="audit-name">Nutrition</span><span class="audit-bar"><span style="width:30%"></span></span><span class="audit-score">3</span></div>
+            <div class="audit-row"><span class="audit-name">Energy</span><span class="audit-bar"><span style="width:50%"></span></span><span class="audit-score">5</span></div>
+            <div class="audit-row"><span class="audit-name">Health</span><span class="audit-bar"><span style="width:60%"></span></span><span class="audit-score">6</span></div>
+            <div class="audit-row"><span class="audit-name">Mindset</span><span class="audit-bar"><span style="width:70%"></span></span><span class="audit-score">7</span></div>
+            <div class="audit-row"><span class="audit-name">Habits</span><span class="audit-bar"><span style="width:30%"></span></span><span class="audit-score">3</span></div>
+          </div>
+          <div class="audit-foot">Biggest opportunities: <span>Nutrition · Habits</span></div>
+        </div>
       </div>
       <div class="step reveal">
         <div class="step-num">STEP 02</div>
